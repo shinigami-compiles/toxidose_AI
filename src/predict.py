@@ -38,6 +38,9 @@ MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
 ACUTE_MODEL_PATH = os.path.join(MODEL_DIR, "acute_model_v2.joblib")
 CUMUL_MODEL_PATH = os.path.join(MODEL_DIR, "cumulative_model_v2.joblib")
 
+print("MODEL_DIR:", MODEL_DIR)
+print("Acute model exists:", os.path.exists(ACUTE_MODEL_PATH))
+print("Cumulative model exists:", os.path.exists(CUMUL_MODEL_PATH))
 
 class RiskPredictor:
     """

@@ -40,7 +40,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
 DATA_PATH = os.path.join(
     PROJECT_ROOT,
     "data",
-    "synthetic_medicine_toxicity_dataset_30k.csv"
+    "synthetic_medicine_toxicity_dataset_30k_v2.csv"
 )
 
 MODEL_DIR = os.path.join(PROJECT_ROOT, "models")

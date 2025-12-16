@@ -31,9 +31,20 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Your generate_dataset.py script saves:
 #   "synthetic_medicine_toxicity_dataset_30k.csv"
 # in the project root, so we point directly to that.
-DATA_PATH = r"D:\my_stuff\Projects\new_projects\ToxiDose AI\synthetic_toxidose_dataset_30k_v2.csv"
+# --------------------------------------------------
+# PATHS (Render + Local Safe)
+# --------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
 
-MODEL_DIR = r"D:\my_stuff\Projects\new_projects\ToxiDose AI\models"
+DATA_PATH = os.path.join(
+    PROJECT_ROOT,
+    "data",
+    "synthetic_medicine_toxicity_dataset_30k.csv"
+)
+
+MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
+
 ACUTE_MODEL_PATH = os.path.join(MODEL_DIR, "acute_model_v2.joblib")
 CUMUL_MODEL_PATH = os.path.join(MODEL_DIR, "cumulative_model_v2.joblib")
 

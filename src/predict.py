@@ -27,7 +27,14 @@ plt.switch_backend("Agg")
 # --------------------------------------------------
 # PATHS
 # --------------------------------------------------
-MODEL_DIR = r"D:\my_stuff\Projects\new_projects\ToxiDose AI\models"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Project root (one level up from src/)
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
+
+# Models directory
+MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
+
 ACUTE_MODEL_PATH = os.path.join(MODEL_DIR, "acute_model_v2.joblib")
 CUMUL_MODEL_PATH = os.path.join(MODEL_DIR, "cumulative_model_v2.joblib")
 

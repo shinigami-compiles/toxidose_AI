@@ -9,3 +9,4 @@ jupyter>=1.0.0
 shap>=0.41.0
 xhtml2pdf==0.2.10
 reportlab==3.6.13
+gunicorn==21.2.0

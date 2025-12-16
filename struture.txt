@@ -1,0 +1,34 @@
+medicine_toxicity_ml/
+│
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   └── (Empty initially, CSV will be generated here)
+│
+├── models/
+│   └── (Empty initially, .pkl files will be saved here)
+│
+├── src/
+│   ├── __init__.py          <-- (Create this empty file)
+│   ├── drug_table.py
+│   ├── patient_simulator.py
+│   ├── regimen_simulator.py
+│   ├── feature_engineering.py
+│   ├── data_generator.py
+│   ├── models.py
+│   └── predict.py
+│
+└── app/
+    ├── app.py
+    ├── templates/
+    │   ├── base.html
+    │   ├── index.html
+    │   ├── result.html
+    │   ├── help.html
+    │   └── how_it_works.html
+    └── static/
+        ├── css/
+        │   └── style.css
+        └── js/
+            └── script.js

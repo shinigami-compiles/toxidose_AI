@@ -76,6 +76,9 @@ class RiskPredictor:
         else:
             print(f"Warning: Cumulative model not found at {CUMUL_MODEL_PATH}")
 
+        print("MODEL_DIR:", MODEL_DIR)
+        print("Files:", os.listdir(MODEL_DIR) if os.path.exists(MODEL_DIR) else "NOT FOUND")
+
     # --------------------------------------------------
     # PREPROCESSING
     # --------------------------------------------------
